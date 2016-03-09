@@ -23,23 +23,22 @@ impl Component for App {
     type State = i32;
     type View = Element;
 
-    fn intent(&self, context: Context, event: Event) -> Option<Action>
-    {
-      match event{Press(Keyboard(Key::Right))=>Some(Action::MoveRight),
-                Press(Keyboard(Key::Left))=>Some(Action::MoveLeft),
-                _=>None
-                }
+    fn intent(&self, context: Context, event: Event) -> Option<Action> {
+        match event {
+            Press(Keyboard(Key::Right)) => Some(Action::MoveRight),
+            Press(Keyboard(Key::Left)) => Some(Action::MoveLeft),
+            _ => None
+        }
     }
 
     fn init(&self) -> i32 {
         0
     }
 
-    fn update(&self, current: i32, action: Action)
-        -> i32
-    {
-        match action{Action::MoveRight=>current+1,
-            Action::MoveLeft=>current-1,
+    fn update(&self, current: i32, action: Action) -> i32 {
+        match action {
+            Action::MoveRight => current + 1,
+            Action::MoveLeft => current - 1,
         }
     }
 
