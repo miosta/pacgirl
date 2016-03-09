@@ -11,7 +11,8 @@ pub struct App;
 
 #[derive(Clone)]
 pub enum Action {
-    MoveRight
+    MoveRight,
+    MoveLeft,
 }
 
 
@@ -24,8 +25,10 @@ impl Component for App {
 
     fn intent(&self, context: Context, event: Event) -> Option<Action>
     {
-      if event==Press(Keyboard(Key::Right)){Some(Action::MoveRight)}
-      else {None}
+      match event{Press(Keyboard(Key::Right))=>Some(Action::MoveRight),
+                Press(Keyboard(Key::Left))=>Some(Action::MoveLeft),
+                _=>None
+                }
     }
 
     fn init(&self) -> i32 {
@@ -35,7 +38,9 @@ impl Component for App {
     fn update(&self, current: i32, action: Action)
         -> i32
     {
-        current+1
+        match action{Action::MoveRight=>current+1,
+            Action::MoveLeft=>current-1,
+        }
     }
 
     fn view(&self, context: Context, state: i32) -> Element {
