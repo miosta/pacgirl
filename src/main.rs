@@ -5,6 +5,7 @@ extern crate carboxyl;
 extern crate carboxyl_window;
 extern crate benzene;
 extern crate benzene_2d;
+extern crate input;
 
 use piston::window::WindowSettings;
 use benzene::Driver;

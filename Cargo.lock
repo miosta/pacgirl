@@ -8,6 +8,7 @@ dependencies = [
  "carboxyl_window 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "elmesque 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "piston 0.17.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "pistoncore-input 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
