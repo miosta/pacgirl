@@ -15,7 +15,7 @@ mod app;
 
 
 fn settings() -> WindowSettings {
-    WindowSettings::new("I'm a toggle button", (800, 600))
+    WindowSettings::new("Pacfriends", (800, 600))
 }
 
 fn main() {
