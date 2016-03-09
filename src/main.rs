@@ -13,7 +13,7 @@ use benzene_2d::Driver2d;
 use app::App;
 
 mod app;
-
+mod player;
 
 fn settings() -> WindowSettings {
     WindowSettings::new("Pacfriends", (800, 600))
@@ -21,6 +21,6 @@ fn settings() -> WindowSettings {
 
 fn main() {
     let mut driver2d = Driver2d::new(settings());
-    let output = benzene::start(App, driver2d.output());
+    let output = benzene::start(App::new(), driver2d.output());
     driver2d.run(output);
 }
