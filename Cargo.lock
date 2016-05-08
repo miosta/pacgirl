@@ -2,8 +2,8 @@
 name = "pacgirls"
 version = "0.1.0"
 dependencies = [
- "benzene 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "benzene-2d 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "benzene 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "benzene-2d 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "carboxyl 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "carboxyl_window 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "elmesque 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -40,7 +40,7 @@ dependencies = [
 
 [[package]]
 name = "benzene"
-version = "0.1.1"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "carboxyl 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -48,10 +48,10 @@ dependencies = [
 
 [[package]]
 name = "benzene-2d"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
- "benzene 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "benzene 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "carboxyl 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "carboxyl_window 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "elmesque 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
